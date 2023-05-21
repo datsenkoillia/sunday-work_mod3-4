@@ -56,7 +56,7 @@ export const App = () => {
         clickHandler={toggleVisibility}
         text={isListShow ? 'hide movies list' : 'show movies list'}
       />
-      {isListShow && (
+      {isListShow && !isLoader && (
         <>
           <MoviesList
             movies={movies}
